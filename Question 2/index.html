@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Box</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e0e0e0; 
+        }
+        .full-screen-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 50vw;
+            background-color: #f0f0f0;
+            border: 15px solid green;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        .full-screen-box:hover {
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3);
+        }
+        .centered-text {
+            font-size: 4em;
+            font-weight: 100;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-screen-box">
+        <div class="centered-text">
+            Zepto Apps
+        </div>
+    </div>
+</body>
+</html>
